@@ -1,0 +1,8 @@
+n=int(input())
+saranya=list(map(int,input().split()))
+ch=[]
+print(saranya)#before duplication
+for i in saranya:
+    if i not in ch:
+        ch.append(i)
+print(ch)#after duplication
