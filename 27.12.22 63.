@@ -1,0 +1,19 @@
+n=int(input())
+l=list(map(int,input().split()))
+x=int(input())
+flag=0
+beg=0
+end=n-1
+while end>=beg:
+    mid=(beg+end)//2
+    if l[mid]<x:
+        beg=mid+1
+    elif l[mid]==x:
+        flag=1
+        break
+    elif l[mid]>x:
+       end=mid-1
+if flag==1:
+    print('Element is found')
+else:
+    print('Element is not found')
