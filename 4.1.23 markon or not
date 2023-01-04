@@ -1,0 +1,19 @@
+n=int(input("enter"))
+m=[]
+c=0
+for i in range(n):
+    l=[]
+    for j in range(n):
+        x=int(input())
+        l.append(x)
+    m.append(l)
+for i in range(0,n):
+    s=0
+    for j in range(0,n):
+        s=s+m[i][j]
+    if s==1:
+        c=c+1
+if s==2:
+    print("coder target") 
+else:
+    print("not a coder target")
