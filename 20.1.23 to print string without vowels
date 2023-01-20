@@ -1,0 +1,8 @@
+s=input()
+n=len(s)
+res=''
+v=['a','e','i','o','u','A','E','I','O','U']
+for i in range(n):
+        if s[i] not in v:
+                res=res+s[i]
+print(res)
